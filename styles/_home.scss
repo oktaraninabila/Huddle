@@ -1,0 +1,60 @@
+body{
+    background-color: $violet;
+    background-repeat: no-repeat;
+}
+.logo{
+    height: 40px;
+    width: auto;
+}
+.content{
+    display: flex;
+    .title{
+        font-family: $poppins;
+        color: $white;
+    }
+    p{
+        font-family: $openSans;
+        color: $white;
+    }
+    .kanan{
+        .tombol{
+            width: 100%;
+            button{
+                font-family: $openSans;
+                background-color: $white; /* Green */
+                border: none;
+                width: 200px;
+                height: 40px;
+                color: $violet;
+                border-radius: 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+            }
+        }
+        
+    }
+}
+button.btn:active{
+    color: $white;
+    background-color: $magenta;
+}
+.tombol{
+    margin-top: 20px;
+}
+.socials{
+    display: flex;
+    ul{
+        list-style-type: none;
+    }
+    li{
+        float: left;
+        a{
+            text-decoration: none;
+        }
+        :active{
+            color:$magenta ;
+        }
+    }
+
+}

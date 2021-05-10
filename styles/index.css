@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+body {
+  background-color: #674baf;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content .title {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.content p {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+}
+
+.content .kanan .tombol {
+  width: 100%;
+}
+
+.content .kanan .tombol button {
+  font-family: "Open Sans", sans-serif;
+  background-color: #fff;
+  /* Green */
+  border: none;
+  width: 200px;
+  height: 40px;
+  color: #674baf;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+button.btn:active {
+  color: #fff;
+  background-color: #e882e8;
+}
+
+.tombol {
+  margin-top: 20px;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.socials ul {
+  list-style-type: none;
+}
+
+.socials li {
+  float: left;
+}
+
+.socials li a {
+  text-decoration: none;
+}
+
+.socials li :active {
+  color: #e882e8;
+}
+
+@media only screen and (min-width: 575px) {
+  body {
+    background-image: url(/images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .logo {
+    margin-top: 25px;
+  }
+  .container {
+    width: 90%;
+    margin-left: 8%;
+    margin-top: 20px;
+  }
+  .content {
+    margin-top: 50px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .content .kiri {
+    width: 55%;
+    height: auto;
+  }
+  .content .kiri img {
+    width: 90%;
+  }
+  .content .kanan {
+    width: 35%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content .kanan .title {
+    margin-top: 40px;
+    margin-bottom: 0px;
+  }
+  .socials {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 10%;
+  }
+}
+
+@media only screen and (max-width: 574px) {
+  body {
+    background-image: url(/images/bg-mobile.svg);
+    background-position: top;
+  }
+  .logo {
+    margin-left: 10%;
+    margin-top: 20px;
+  }
+  .img {
+    width: 20px;
+  }
+  .content {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content .kiri {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .content .kiri img {
+    width: 100%;
+  }
+  .content .kanan {
+    width: 100%;
+    text-align: center;
+  }
+  .content .kanan .title {
+    font-size: 22px;
+  }
+  .content .kanan p {
+    margin-bottom: 20px;
+  }
+  .socials {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=index.css.map */
